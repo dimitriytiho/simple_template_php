@@ -1,0 +1,12 @@
+addDefaultCharset utf-8
+
+RewriteEngine On
+
+#no http and www
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteRule (.*) public/$1
