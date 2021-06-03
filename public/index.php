@@ -1,14 +1,14 @@
 <?php
 
 // Показывать все ошибки PHP
-ini_set('error_reporting', E_ALL);
+/*ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_startup_errors', 1);*/
 
 
 // Подключаем необходимое
 // Папка приложения
-$dir = dirname( __DIR__ );
+$dir = dirname(__DIR__);
 
 // Автозагрузчик composer
 require_once $dir . '/vendor/autoload.php';
